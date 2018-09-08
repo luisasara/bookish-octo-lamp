@@ -7,8 +7,8 @@
 <style>
 #LB {
 
- font-family: sans-serif;
- //color: White;
+ font-family: talldark;
+ //color: black;
  text-align: center;
 
 
@@ -16,8 +16,12 @@
 }
 p {
 
- font-family: Verdana;
- color: White;
+  @font-face {
+     font-family: talldark;
+     src: url(talldark.ttf);
+  }
+  font-size: 46px;
+
  text-align: center;
  padding-top: 7%;
 
@@ -25,8 +29,8 @@ p {
 }
 
 .header {
-  background-color: White;
-  border: gray;
+
+  border-color: 25px gray;
   width: 90%;
   height: 19%;
   margin-left: 5%;
@@ -36,8 +40,9 @@ p {
 }
 
 .quadrato {
-  background-color: White;
-    border: gray;
+
+background-color: gray;
+    border: 25px gray;
   width: 35%;
   height: 12%;
   margin-left: 5%;
