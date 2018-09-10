@@ -7,48 +7,56 @@
 <style>
 #LB {
 
- font-family: talldark;
+font-family: "system-ui";
  //color: black;
  text-align: center;
-
-
+ font-size: 50px;
 
 }
-p {
 
-  @font-face {
-     font-family: talldark;
-     src: url(talldark.ttf);
-  }
-  font-size: 46px;
-
- text-align: center;
- padding-top: 7%;
-
-
+#subtitles {
+  font-family: "system-ui";
+  font-size: 20px;
+  text-align: center;
 }
 
 .header {
 
-  border-color: 25px gray;
-  width: 90%;
-  height: 19%;
-  margin-left: 5%;
-  margin-top: 3%;
-
-
+  background-color: gray;
+      border: 25px gray;
+  width: 90vw;
+  height: 19vh;
+  margin-left: 5vw;
+  margin-top: 3vh;
 }
 
 .quadrato {
 
-background-color: gray;
+  font-family: "system-ui";
+    font-size: 30px;
+    text-align: center;
+background-image:: url("cicala1.jpg");
     border: 25px gray;
-  width: 35%;
-  height: 12%;
-  margin-left: 5%;
-  margin-top: 3%;
+  width: 35vw;
+  height: 12vh;
+  margin-left: 5vw;
+  margin-top: 3vh;
+}
+
+#b1 {
+
+background-color: yellow;
+position: absolute;
+margin-top: 4vh;
+margin-left: 45vw;
+width: 50vw;
+height: 60vh;
 
 }
+
+
+
+
 
 </style>
 </head>
@@ -57,20 +65,24 @@ background-color: gray;
 <body>
 
 <div class="background">
-  <div id="LB" class="header"> <p> Welcome! Luisa Battajni | Italy | 1997 | Designer hopeful </p> </div>
+  <div class="header"> <p id="LB"> Welcome! </p>
+    <p id="subtitles"> Luisa Battajni | Italy | 1997 | Designer hopeful </p> </div>
 
-<div id="About" class="quadrato">
-<p> About </p>
-</div>
-     <div id="Portfolio" class="quadrato">
 
-     <p> Portfolio </p>
+<div id="b1">  <p> CONTACT ME </p> </div>
 
-   </div>
-     <div id="Contact" class="quadrato"> <p> Contact me </p></div>
-     <div id="Odds" class="quadrato"> <p> Odds and Ends </p></div>
+<div id="About" class="quadrato"><p> ABOUT </p></div>
+<div id="Portfolio" class="quadrato"><p> PORTFOLIO </p></div>
+<div id="Contact" class="quadrato"> <p> CONTACT ME </p></div>
+ <div id="Odds" class="quadrato"> <p> ODDS AND ENDS </p></div>
 
 </div>
+
+<script>
+
+</script>
+
+
 </body>
 
 
