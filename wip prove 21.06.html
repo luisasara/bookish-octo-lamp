@@ -1,0 +1,149 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style001.css">
+
+
+<style>
+#LB {
+
+font-family: "system-ui";
+ //color: black;
+ text-align: center;
+ font-size: 50px;
+
+}
+
+#subtitles {
+  font-family: "system-ui";
+  font-size: 20px;
+  text-align: center;
+}
+
+.header {
+
+  background-color: white;
+      border: 25px gray;
+  width: 90vw;
+  height: 19vh;
+  margin-left: 5vw;
+  margin-top: 3vh;
+}
+
+.quadrato {
+  color: white;
+font-stretch: extra-expanded;
+  font-family: "system-ui";
+    font-size: 40px;
+    text-align: center;
+    border: 25px gray;
+  width: 35vw;
+  height: 12vh;
+  margin-left: 5vw;
+  margin-top: 3vh;
+
+}
+
+#About {
+  background-image: url("Cicada.png");
+  background-position: left;
+
+}
+#Portfolio {
+  background-image: url("Port.png");
+  background-position: left;
+  background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+#Contact {
+  background-image: url("mail.png");
+  background-position: left;
+  background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+
+}
+#Odds {
+  background-image: url("ooo.png");
+  background-position: left;
+  background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+
+}
+
+#b1 {
+
+font-family: sans-serif;
+background-color: gray;
+position: absolute;
+line-height: 30px;
+margin-top: 4vh;
+margin-left: 45vw;
+width: 540px;
+height: 380px;
+padding: 50px;
+background-image: url("celle.png");
+background-position: left;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+   overflow: scroll;
+}
+
+
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="background">
+  <div class="header"> <p id="LB"> Welcome! </p>
+    <p id="subtitles"> Luisa Battajni | Italy | 1997 | Designer hopeful | <a href="https://www.polimi.it/">Polimi</a> </p> </div>
+
+
+<div id="b1" class="off">   </div>
+
+<div id="About" class="quadrato"><p> ABOUT </p></div>
+<div id="Portfolio" class="quadrato"><p> PORTFOLIO </p></div>
+<div id="Contact" class="quadrato"> <p> CONTACT ME </p></div>
+ <div id="Odds" class="quadrato"> <p> ODDS AND ENDS </p></div>
+
+</div>
+
+<script>
+document.getElementById("About").onclick = function() {ab()};
+
+function ab() {
+    document.getElementById("b1").innerHTML = "<p>Hi! I’m Luisa, a 21 years old with a questionable sense of humor. </p> <p>I'm currently enrolled at Politecnico di Milano, where I’m studying to be a Designer. </p>I like reading, swimming, cicadas and striped socks. I'm just getting started, but you can find some of my works in the Portfolio section!";
+}
+
+document.getElementById("Portfolio").onclick = function() {por()};
+
+function por() {
+    document.getElementById("b1").innerHTML = "Here you can see some of my school projects, as well as a couple of personal ones.";
+}
+
+document.getElementById("Contact").onclick = function() {con()};
+
+function con() {
+    document.getElementById("b1").innerHTML = "<p>You can reach me through my often-used GMail address luisa.sarab@gmail.com </p> <p>If you are currently avoiding all things Google, hit me up at luisa.battajni@libero.it. </p>";
+}
+document.getElementById("Odds").onclick = function() {odds()};
+
+function odds() {
+    document.getElementById("b1").innerHTML = "<p>The Odds and Ends section, where I overshare and recommend stuff I came across in the last few months.</p> <p><b>Books</b></p><p>The Remains of the Day, by Kazuo Ishiguro</p> <p>Britt-Marie was here, by Fredrik Backman</p> <p>Apologize! Apologize!, by Elizabeth Kelly</p> <p>'Tis, by Frank McCourt</p><p><b>Music </b></p><p>Florence and the Machine</p><p>Mumford and sons</p><p><b>Comics</b></p><p>Maus, by Art Spiegelman</p><p>Courtney Crumrin, by Ted Naifeh</p><p>Persepolis, by Marjane Satrapi</p>";
+}
+
+</script>
+
+
+</body>
+
+
+</html>
